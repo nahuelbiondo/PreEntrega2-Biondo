@@ -1,0 +1,9 @@
+@mixin contenido{
+    position: relative;
+    height: 100px;
+    top: -100px;
+}
+
+.itemDos {
+    @include contenido;
+}
