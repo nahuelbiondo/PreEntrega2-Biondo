@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-    content="Fábrica de muebles de estilo industrial en Buenos Aires.">
-    <meta name="keywords"
-    content="muebles, repisa, mesa, lampara, madera, hierro">
- 
+    <meta name="description" content="Fábrica de muebles de estilo industrial en Buenos Aires.">
+    <meta name="keywords" content="muebles, repisa, mesa, lampara, madera, hierro">
+
     <title>Simetría Urbana</title>
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">   
     <link rel="stylesheet" href="css/estilo.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 </head>
+
 <body>
-    <!-- ********************************** INDEX Y PRODUCTOS SON LAS PÁGINAS MODIFICADAS PARA LA ENTREGA 2*************************************** -->
-    <header>
+    
         <div class="header">
-        <div class="caja itemUno">
-            <img class="logo" src="logo.png" alt="logo de simetría urbana">
+            <div class="caja itemUno">
+                <a href="index.html"><img class="logo" src="logo.png" alt="logo de simetría urbana"></a>
+            </div>
+
+            <nav class="caja itemDos">
+                <ul class="barraNavegacion gridContenedor">
+
+                    <li class="menu inicio"><a class="itemMenu" href="index.html">Inicio</a></li>
+                    <li class="menu quienes"><a class="itemMenu" href="html/quienes-somos.html">Quienes somos</a></li>
+                    <li class="menu productos"><a class="itemMenu" href="html/productos.html">Productos</a></li>
+                    <li class="menu contacto"><a class="itemMenu" href="html/contacto.html">Contacto</a></li>
+                    <li class="menu donde"><a class="itemMenu" href="html/donde-estamos.html">Ubicación</a></li>
+
+                </ul>
+            </nav>
         </div>
-        
-        <nav class="caja itemDos">
-            <ul class="barraNavegacion gridContenedor" >
-                
-                <li class="menu inicio"><a class="itemMenu" href="index.html">Inicio</a></li>
-                <li class="menu quienes"><a class="itemMenu" href="html/quienes-somos.html">Quienes somos</a></li>
-                <li class="menu productos"><a class="itemMenu" href="html/productos.html">Productos</a></li>
-                <li class="menu contacto"><a class="itemMenu" href="html/contacto.html">Contacto</a></li>
-                <li class="menu donde"><a class="itemMenu" href="html/donde-estamos.html">Donde estamos</a></li>
-                
-            </ul>
-        </nav>
-    </div>
     </header>
     <main>
         <h1 data-aos="fade-left" class="tituloPrincipal">La mejor calidad para vos</h1>
-        <div data-aos="fade-right" class="portada1" >
-             <img class="portada" src="portada-su.jpg" alt="foto de portada" > 
+        <div data-aos="fade-right" class="portada1">
+            <img class="portada" src="portada-su.jpg" alt="foto de portada">
         </div>
         <section class="cuadricula">
-            
+
             <div class="imagenes imagen1">
                 <img class="mozaico" src="multimedia/cuna.jpg" alt="cuna montessori">
             </div>
@@ -63,37 +64,41 @@
             </div>
         </section>
         <h2 class="tituloForm">¿Querés que un asesor te contacte?</h2>
-        
-        <form class="form">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre">
-            <br><br>
-            <label for="apellido">Apellido</label>
-            <input type="text">
-            <br><br>
-            <label for="correo electronico">Correo electrónico</label>
-            <input type="email">
-            <br><br>
-            <input type="submit">
-            <input type="reset">
-
-        </form>
+        <!-- formulario -->
+        <div class="mb-3">
+            <label for="Nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+        </div>
+        <div class="mb-3">
+            <label for="Apellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+        </div>
+        <div class="mb-3">
+            <label for="Correo electrónico" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com">
+        </div>
     </main>
     <footer>
         <h3 class="tituloFooter">Conocé nuestras redes</h3>
         <div class="rrss">
-            <a href="https://www.whatsapp.com/?lang=es"><img class="rrssLogo" src="multimedia/WhatsApp.svg.png" alt="logo WhatsApp"></a>
-            
-            <a href="https://twitter.com/?lang=es"><img class="rrssLogo" src="multimedia/Twitter-logo.svg.png" alt="twitter logo"></a>
-            <a href="https://www.facebook.com/"><img class="rrssLogo" src="multimedia/Facebook_f_logo_(2019).svg.png" alt="logo FaceBook"></a>
-            <a href="https://www.instagram.com/"><img class="rrssLogo" src="multimedia/Instagram_logo_2016.svg.png" alt="logo Instagram"></a>
+            <a href="https://www.whatsapp.com/?lang=es"><img class="rrssLogo" src="multimedia/WhatsApp.svg.png"
+                    alt="logo WhatsApp"></a>
+
+            <a href="https://twitter.com/?lang=es"><img class="rrssLogo" src="multimedia/Twitter-logo.svg.png"
+                    alt="twitter logo"></a>
+            <a href="https://www.facebook.com/"><img class="rrssLogo" src="multimedia/Facebook_f_logo_(2019).svg.png"
+                    alt="logo FaceBook"></a>
+            <a href="https://www.instagram.com/"><img class="rrssLogo" src="multimedia/Instagram_logo_2016.svg.png"
+                    alt="logo Instagram"></a>
         </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    </body>
-</html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
 
+</html>

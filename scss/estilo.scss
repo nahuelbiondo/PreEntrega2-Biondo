@@ -1,406 +1,395 @@
 /*GENERALES*/
-/************ INDEX Y PRODUCTOS SON LOS MODIFICADOS PARA LA ENTREGA 2************/
+
 @import "variables";
 @import "general";
 @import "mixin";
+
+
 .header {
-    background-color: $color-secundario;
-    height: 100px;
-    position: relative;
+  background-color: $color-secundario;
+  height: 100px;
+  position: relative;
+
+}
+
+.caja {
+  display: inline;
+}
+
+.itemUno {
+  position: relative;
+}
+
+
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.barraNavegacion {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.menu {
+  display: inline;
+  padding: 20px;
+  list-style-type: none;
+}
+
+.itemMenu {
+  text-decoration: none;
+  color: $color-principal;
+  font-family: $fuente;
+  font-size: 20px;
+
+  &:hover {
+    color: $color-hover;
   }
-  
-  .caja {
-    display: inline;
+}
+
+.portada1 {
+  width: 100%;
+  height: auto;
+  text-align: center;
+
+  img {
+    width: 80%;
+    height: auto;
   }
-  
-  .itemUno {
-    position: relative;
+}
+
+footer {
+  background-color: $color-secundario;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.rrssLogo {
+  width: 40px;
+  padding: 10px;
+}
+
+.tituloFooter {
+  font-family: $fuente;
+  color: $color-principal;
+  font-size: 20px;
+  margin-left: 100px;
+  padding-right: 50px;
+}
+
+.mb-3 {
+  width: 50%;
+  padding-left: 50px;
+  font-family: $fuente;
+  color: $color-secundario;
+
+}
+
+.form-control {
+  border-radius: 10px;
+  border: none;
+  font-family: $fuente;
+
+}
+
+/**************Animaciones***************/
+
+.mozaico:hover {
+  width: 500px;
+  height: 500px;
+  margin-left: 100px;
+  transition: height 1s, width 1s;
+}
+
+/*INDEX*/
+
+.tituloPrincipal {
+  color: $color-secundario;
+  text-align: center;
+  font-family: $fuente;
+  font-size: 50px;
+}
+
+.cuadricula {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.imagenes {
+  margin-top: 20px;
+}
+
+.mozaico {
+  margin-left: 120px;
+  width: 370px;
+  height: 370px;
+}
+
+.tituloForm {
+  font-family: $fuente;
+  color: $color-secundario;
+  margin-left: 100px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+
+/*CONTACTO*/
+
+/*DONDE ESTAMOS*/
+
+.map {
+  overflow: hidden;
+  width: 80%;
+  padding-bottom: 50%;
+  position: relative;
+  margin-left: 10%;
+  margin-top: 10px;
+  height: 0;
+
+  iframe {
+    left: 0;
+
+    top: 0;
+
+    height: 100%;
+
+    width: 100%;
+
+    position: absolute;
+
   }
-  
-  /*.itemDos {
-    position: relative;
-    height: 100px;
-    top: -100px;
-  }*/
-  
-  .logo {
-    width: 100px;
-    height: 100px;
-  }
-  
-  .barraNavegacion {
+
+
+}
+
+.horarios {
+  text-align: center;
+
+  p {
+    font-size: 1rem;
+    font-family: $fuente;
     text-align: center;
-    margin-top: 40px;
   }
-  
-  .menu {
-    display: inline;
-    padding: 20px;
-    list-style-type: none;
-  }
-  
+}
+
+/*PRODUCTOS*/
+
+.prodTitle {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: $fuente;
+  margin-bottom: -20px;
+  margin-left: 50px;
+}
+
+.carrusel {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+/*QUIENES SOMOS*/
+
+.texto {
+  font-size: 25px;
+  font-family: $fuente;
+  text-align: center;
+
+}
+
+/*RESPONSIVE*/
+/*********         EXTRA SMALL TO  MEDIUM           *********/
+@media (min-width: 350px) and (max-width: 768px) {
   .itemMenu {
     text-decoration: none;
     color: $color-principal;
     font-family: $fuente;
-    font-size: 20px;
+    font-size: 10px;
   }
-  
+
+  .logo {
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+  }
+
+  .barraNavegacion {
+    text-align: match-parent;
+    margin-top: 10px;
+  }
+
+  .header {
+    background-color: $color-secundario;
+    height: 70px;
+    position: relative;
+  }
+
   .portada1 {
     width: 100%;
     height: auto;
     text-align: center;
-  
+
     img {
-      width: 80%;
+      width: 90%;
       height: auto;
     }
   }
-  
+
+  .tituloPrincipal {
+    color: $color-secundario;
+    text-align: center;
+    font-family: $fuente;
+    font-size: 30px;
+  }
+
+  .mozaico {
+    margin-left: 0px;
+    width: 300px;
+    height: 300px;
+
+    &:hover {
+      width: 400px;
+      height: 400px;
+      margin-left: 0px;
+      transition: height 1s, width 1s;
+    }
+  }
+
+
+  .tituloForm {
+    font-family: $fuente;
+    color: $color-secundario;
+    margin-left: 70px;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
   footer {
     background-color: $color-secundario;
     display: flex;
     align-items: center;
     margin-top: 20px;
   }
-  
+
   .rrssLogo {
-    width: 40px;
-    padding: 10px;
+    width: 30px;
+    padding: 7px;
   }
-  
+
   .tituloFooter {
     font-family: $fuente;
     color: $color-principal;
-    font-size: 20px;
-    margin-left: 100px;
-    padding-right: 50px;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 7px;
+    padding-right: 30px;
   }
-  
-  
-  
-  /**************Animaciones***************/
-  
-  .mozaico:hover {
-    width: 500px;
-    height: 500px;
-    margin-left: 100px;
-    transition: height 1s, width 1s;
+
+  .texto {
+    font-size: 10px;
+    font-family: $fuente;
+    text-align: center;
   }
-  
-  /*INDEX*/
-  
+}
+
+/*********           MEDIUM TO EXTRA LARGE          *********/
+@media (min-width: 769px) and (max-width: 1200px) {
+  .itemMenu {
+    text-decoration: none;
+    color: $color-principal;
+    font-family: $fuente;
+    font-size: 15px;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .barraNavegacion {
+    text-align: match-parent;
+    margin-top: 25px;
+  }
+
+  .header {
+    background-color: $color-secundario;
+    height: 85px;
+    position: relative;
+  }
+
+  .portada1 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+    img {
+      width: 90%;
+      height: auto;
+    }
+  }
+
   .tituloPrincipal {
     color: $color-secundario;
     text-align: center;
     font-family: $fuente;
-    font-size: 50px;
+    font-size: 40px;
   }
-  
-  .cuadricula {
-    display: flex;
-    width: 100%;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .imagenes {
-    margin-top: 20px;
-  }
-  
+
   .mozaico {
-    margin-left: 120px;
-    width: 370px;
-    height: 370px;
+    margin-left: 0px;
+    width: 350px;
+    height: 350px;
+
+    &:hover {
+      width: 450px;
+      height: 450px;
+      margin-left: 0px;
+      transition: height 1s, width 1s;
+    }
   }
-  
+
+
+
   .tituloForm {
     font-family: $fuente;
     color: $color-secundario;
-    margin-left: 100px;
+    margin-left: 70px;
     font-size: 20px;
     margin-top: 10px;
   }
-  
-  .form {
-    text-align: left;
-    margin-left: 100px;
-  
-    label {
-      font-size: 15px;
-      font-family: $fuente;
-      color: $color-secundario;
-      text-align: center;
-    }
-  
-    input {
-      font-size: 15px;
-      margin-left: 100px;
-    }
+
+  footer {
+    background-color: $color-secundario;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
   }
-  
-  /*CONTACTO*/
-  
-  /*DONDE ESTAMOS*/
-  
-  .map {
-    width: 100%;
-    text-align: center;
-  
-    iframe {
-      width: 90%;
-      height: auto;
-      margin-top: 5px;
-    }
-  
-    p {
-      font-size: 1rem;
-      font-family: $fuente;
-      text-align: center;
-    }
+
+  .rrssLogo {
+    width: 35px;
+    padding: 10px;
   }
-  
-  /*PRODUCTOS*/
-  
-  .prodTitle {
-    font-size: 50px;
-    font-weight: bold;
+
+  .tituloFooter {
     font-family: $fuente;
-    margin-bottom: -20px;
-    margin-left: 50px;
+    color: $color-principal;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 7px;
+    padding-right: 30px;
   }
-  
-  .carrusel {
-    width: 100%;
-    height: auto;
-    text-align: center;
-  }
-  
-  /*QUIENES SOMOS*/
-  
+
   .texto {
-    font-size: 25px;
-    font-family: $fuente;
-    text-align: center;
-   
-  }
-  
-  /*RESPONSIVE*/
-  /*********         EXTRA SMALL TO  MEDIUM           *********/
-  @media (min-width: 400px) and (max-width: 768px) {
-    .itemMenu {
-      text-decoration: none;
-      color: $color-principal;
-      font-family: $fuente;
-      font-size: 10px;
-    }
-  
-    .logo {
-      width: 100px;
-      height: 100px;
-      opacity: 0;
-    }
-  
-    .barraNavegacion {
-      text-align: match-parent;
-      margin-top: 10px;
-    }
-  
-    .header {
-      background-color: $color-secundario;
-      height: 70px;
-      position: relative;
-    }
-  
-    .portada1 {
-      width: 100%;
-      height: auto;
-      text-align: center;
-  
-      img {
-        width: 90%;
-        height: auto;
-      }
-    }
-  
-    .tituloPrincipal {
-      color: $color-secundario;
-      text-align: center;
-      font-family: $fuente;
-      font-size: 30px;
-    }
-  
-    .mozaico {
-      margin-left: 0px;
-      width: 300px;
-      height: 300px;
-  
-      &:hover {
-        width: 400px;
-        height: 400px;
-        margin-left: 0px;
-        transition: height 1s, width 1s;
-      }
-    }
-  
-    .form {
-      text-align: left;
-      margin-left: 70px;
-  
-      label {
-        font-size: 13px;
-        font-family: $fuente;
-        color: $color-secundario;
-        text-align: center;
-      }
-  
-      input {
-        font-size: 10px;
-        margin-left: 40px;
-      }
-    }
-  
-    .tituloForm {
-      font-family: $fuente;
-      color: $color-secundario;
-      margin-left: 70px;
-      font-size: 20px;
-      margin-top: 10px;
-    }
-  
-    footer {
-      background-color: $color-secundario;
-      display: flex;
-      align-items: center;
-      margin-top: 20px;
-    }
-  
-    .rrssLogo {
-      width: 30px;
-      padding: 7px;
-    }
-  
-    .tituloFooter {
-      font-family: $fuente;
-      color: $color-principal;
-      font-size: 15px;
-      margin-left: 10px;
-      margin-top: 7px;
-      padding-right: 30px;
-    }
-    .texto{
-        font-size: 10px;
-    font-family: $fuente;
-    text-align: center;
-    }
-  }
-  
-  /*********           MEDIUM TO EXTRA LARGE          *********/
-  @media (min-width: 769px) and (max-width: 1200px) {
-    .itemMenu {
-      text-decoration: none;
-      color: $color-principal;
-      font-family: $fuente;
-      font-size: 15px;
-    }
-  
-    .logo {
-      width: 100px;
-      height: 100px;
-    }
-  
-    .barraNavegacion {
-      text-align: match-parent;
-      margin-top: 25px;
-    }
-  
-    .header {
-      background-color: $color-secundario;
-      height: 85px;
-      position: relative;
-    }
-  
-    .portada1 {
-      width: 100%;
-      height: auto;
-      text-align: center;
-  
-      img {
-        width: 90%;
-        height: auto;
-      }
-    }
-  
-    .tituloPrincipal {
-      color: $color-secundario;
-      text-align: center;
-      font-family: $fuente;
-      font-size: 40px;
-    }
-  
-    .mozaico {
-      margin-left: 0px;
-      width: 350px;
-      height: 350px;
-  
-      &:hover {
-        width: 450px;
-        height: 450px;
-        margin-left: 0px;
-        transition: height 1s, width 1s;
-      }
-    }
-  
-    .form {
-      text-align: left;
-      margin-left: 70px;
-  
-      label {
-        font-size: 13px;
-        font-family: $fuente;
-        color: $color-secundario;
-        text-align: center;
-      }
-  
-      input {
-        font-size: 10px;
-        margin-left: 40px;
-      }
-    }
-  
-    .tituloForm {
-      font-family: $fuente;
-      color: $color-secundario;
-      margin-left: 70px;
-      font-size: 20px;
-      margin-top: 10px;
-    }
-  
-    footer {
-      background-color: $color-secundario;
-      display: flex;
-      align-items: center;
-      margin-top: 20px;
-    }
-  
-    .rrssLogo {
-      width: 35px;
-      padding: 10px;
-    }
-  
-    .tituloFooter {
-      font-family: $fuente;
-      color: $color-principal;
-      font-size: 20px;
-      margin-left: 10px;
-      margin-top: 7px;
-      padding-right: 30px;
-    }
-    .texto{ 
     font-size: 20px;
     font-family: $fuente;
     text-align: center;
-    }
   }
+}
